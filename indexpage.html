@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Landing Page</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
+
+     <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <!-- animation on scroll -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+   <!-- Icon -->
+   <script src="https://kit.fontawesome.com/89137546b1.js" crossorigin="anonymous"></script>
+   
+</head>
+<body>
+    <header>
+        <nav>
+            <section class="hero" id="h">
+                <div class="bagianatas">
+                    <ul class="navigasi">
+                       <li><a href="#h"><i class="fa-solid fa-house"></i>Home</a></li>
+                       <li><a href="#d"><i class="fa-solid fa-location-dot"></i>Destinasi</a></li>
+                       <li><a href="#r"><i class="fa-solid fa-inbox"></i>Review</a></li>
+                       <li><a href="#k"><i class="fa-solid fa-pen"></i>Kontak</a></li>
+                    </ul>
+
+                    <!-- <div class="mobilenav">
+                        <div class="hamburgernav">
+                        <img src="images/menu.png" alt="">
+                    </div>
+                    <ul class="navigasimobile">
+                        <li><a href="#"><i class="fa-solid fa-house"></i>Home</a></li>
+                       <li><a href="#"><i class="fa-solid fa-location-dot"></i>Destinasi</a></li>
+                       <li><a href="#"><i class="fa-solid fa-inbox"></i>Review</a></li>
+                       <li><a href="#"><i class="fa-solid fa-pen"></i>Kontak</a></li>
+                    </ul>
+                </div> -->
+                
+            </div>  
+                    <div class="akun">
+                    <ul class="register">
+                        <li><a href="#">Sign Up</a></li>
+                     </ul>
+                     <ul class="login">
+                        <li><a href="#"><i class="fa-solid fa-user"></i> Log in</a></li>
+                     </ul>
+            </div>
+            
+                <h2>ExproTravel</h2>
+                <p>Liburan Tanpa Batas – Temukan Dunia yang Luar Biasa</p>
+                <div class="btnsection">
+                    <button>Booking Sekarang</button>
+                    <!-- <button>Jelajahi</button> -->
+                </div>
+            </section>
+         </div>
+    </nav>
+
+    <!-- --Tentang Kami-- -->
+<section class="FullTentang">
+    <div class="Tentang" data-aos="fade-up">
+        <div class="Isi" data-aos="fade-up">
+            <h2>4,4</h2>
+            <h4>Overall Rating</h4>
+        </div>
+        <div class="Isi" data-aos="fade-up">
+            <h2>3,000,000</h2>
+            <h4>Pengguna Internasional</h4>
+
+        </div>
+        <div class="Isi" data-aos="fade-up">
+            <h2>3 Tahun</h2>
+            <h4>Semenjak Rilis Global</h4>
+
+        </div>
+        <div class="Isi" data-aos="fade-up">
+            <h2>200+</h2>
+            <h4>Destinasi</h4>
+        </div>
+    </div>
+    <p data-aos="fade-up">Kami adalah ExproTravel sebuah tim yang berdedikasi untuk membantu Anda menjelajahi dunia dengan cara yang lebih <strong>mudah, nyaman, dan berkesan.</strong></p>
+</section>
+
+    <section class="DestinasiTentang" data-aos="fade-up" id="d">
+        <h2>Destinasi Populer Kami</h2>
+        <p>Jelajahi tempat-tempat terbaik yang telah menjadi favorit Pengguna ExproTravel dari berbagai penjuru dunia.</p>
+    </section>
+
+    <swiper-container class="mySwiper" pagination="true" pagination-dynamic-bullets="true" data-aos="fade-up">
+            <swiper-slide>
+                <div class="cardswiper">
+                <div class="cardcontainer">
+                    <div class="cardfoto">
+                        <img src="Assets/Orchard Road.jpg" alt="">
+                    </div>
+
+                    <div class="icondiv">
+                    <div class="icon">
+                    <i class="fa-solid fa-location-dot"><h4>Singapura</h4></i>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-solid fa-wallet"><h4>Rp 2,500,000</h4></i>
+                        </div>
+                </div>
+
+                    <h3>Orchard Road</h3>
+                    <h4>Tak lengkap tidak mengunjungi Orchard Road</h4>
+                    <p>5 - 6 Februari</p>
+                </div>
+
+                <div class="cardcontainer">
+                    <div class="cardfoto">
+                        <img src="Assets/Raja Ampat.jpg" alt="">
+                    </div>
+
+                    <div class="icondiv">
+                    <div class="icon">
+                    <i class="fa-solid fa-location-dot"><h4>Indonesia</h4></i>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-solid fa-wallet"><h4>Rp 1,200,000</h4></i>
+                        </div>
+                </div>
+
+                    <h3>Raja Ampat</h3>
+                    <h4>One of the best view!</h4>
+                    <p>1 - 4 April</p>
+                </div>
+
+                <div class="cardcontainer">
+                    <div class="cardfoto">
+                        <img src="Assets/Bali.jpg" alt="">
+                    </div>
+
+                    <div class="icondiv">
+                    <div class="icon">
+                    <i class="fa-solid fa-location-dot"><h4>Indonesia</h4></i>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-solid fa-wallet"><h4>Rp 1,480,000</h4></i>
+                        </div>
+                </div>
+
+                    <h3>Bali</h3>
+                    <h4>Favorit Orang luar untuk ke Indonesia!</h4>
+                    <p>6 - 7 September</p>
+                </div>
+            </div>
+            </swiper-slide>
+
+            <swiper-slide>
+                <div class="cardswiper">
+                <div class="cardcontainer">
+                    <div class="cardfoto">
+                        <img src="Assets/Seoul.webp" alt="">
+                    </div>
+
+                    <div class="icondiv">
+                    <div class="icon">
+                    <i class="fa-solid fa-location-dot"><h4>Korea Selatan</h4></i>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-solid fa-wallet"><h4>Rp 4,000,000</h4></i>
+                        </div>
+                </div>
+
+                    <h3>Seoul</h3>
+                    <h4>Suasana Sejuk~</h4>
+                    <p>1 - 2 Februari</p>
+                </div>
+
+                <div class="cardcontainer">
+                    <div class="cardfoto">
+                        <img src="Assets/Paris.jpg" alt="">
+                    </div>
+
+                    <div class="icondiv">
+                    <div class="icon">
+                    <i class="fa-solid fa-location-dot"><h4>Paris</h4></i>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-solid fa-wallet"><h4>Rp 5,000,000</h4></i>
+                        </div>
+                </div>
+
+                    <h3>Eiffel Tower</h3>
+                    <h4>Tinggi banget ya?</h4>
+                    <p>1 - 2 Februari</p>
+                </div>
+
+                <div class="cardcontainer">
+                    <div class="cardfoto">
+                        <img src="Assets/Kuala Lumpur.jpg" alt="">
+                    </div>
+
+                    <div class="icondiv">
+                    <div class="icon">
+                    <i class="fa-solid fa-location-dot"><h4>Malaysia</h4></i>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-solid fa-wallet"><h4>Rp 2,360,900</h4></i>
+                        </div>
+                </div>
+
+                    <h3>Kuala Lumpur</h3>
+                    <h4>Halo tetangga!</h4>
+                    <p>1 - 2 Februari</p>
+                </div>
+            </div>
+            </swiper-slide>
+    </swiper-container>
+
+    <!-- Testimoni -->
+    <div class="testimoni" data-aos="fade-up" id="r">
+        <h2>Review ExproTravel</h2>
+        <p>Testimoni dari Pengguna ExproTravel Terbaik Kami!</p>
+        <div class="cardlist">
+
+        <div class="reviewcard" data-aos="fade-right" data-aos-easing="ease-out-cubic"
+        data-aos-duration="1200">
+            <div class="review">
+                <div class="profile">
+                <img src="images/pro4.webp">
+                <h1>Sonia</h1>
+                </div>
+
+                <div class="ulasan">
+                    <h4>Di Buat pada Tanggal 6 Mei 2021</h4>
+                    <ul>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </ul>
+                    <p>"Customer Servicenya Sangat bagus, Harga Terjangkau!"</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="reviewcard" data-aos="fade-right" data-aos-easing="ease-out-cubic"
+        data-aos-duration="1200">
+            <div class="review">
+                <div class="profile">
+                <img src="images/pro3.webp">
+                <h1>Marc</h1>
+                </div>
+
+                <div class="ulasan">
+                    <h4>Di Buat pada Tanggal 9 Desember 2022</h4>
+                    <ul>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </ul>
+                    <p>"Recommended, Ini sangat bagus."</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="reviewcard" data-aos="fade-left" data-aos-easing="ease-out-cubic"
+        data-aos-duration="1200">
+            <div class="review">
+                <div class="profile">
+                <img src="images/pro1.webp">
+                <h1>Maria</h1>
+                </div>
+
+                <div class="ulasan">
+                    <h4>Di Buat pada Tanggal 5 April 2022</h4>
+                    <ul>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </ul>
+                    <p>"Oke, tidak terlalu buruk!"</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="reviewcard" data-aos="fade-left" data-aos-easing="ease-out-cubic"
+        data-aos-duration="1200">
+            <div class="review">
+                <div class="profile">
+                <img src="images/pro2.webp">
+                <h1>Robert</h1>
+                </div>
+
+                <div class="ulasan">
+                    <h4>Di Buat pada Tanggal 10 April 2023</h4>
+                    <ul>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </ul>
+                    <p>"Keren!"</p>
+                </div>
+            </div>
+        </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="PlanSection">
+    <h1 class="headingpaket">Pilih Paket Destinasimu</h1>
+    <p class="paragrafpaket">Siap berpergian? Pilih 3 paket terbaik kami!</p>
+    <div class="planlist">
+        <div class="planbasic" data-aos="fade-up">
+            <h1><i class="fa-solid fa-tag"></i></i>Budget</h1>
+            <p>Minim Budget</p>
+            <div class="hargabasic">
+                <h2>Rp 1,240,560</h2>
+                <p>Most Affordable - Economy</p>
+            </div>
+                <ul class="listbenefit">
+                    <li><i class="fa-solid fa-check"></i> 2-2 Seat layout</li>
+                    <li><i class="fa-solid fa-check"></i> In-flight meal</li>
+                    <li><i class="fa-solid fa-check"></i> In-flight hiburan</li>
+                </ul>
+             <div class="btnlist">
+                <a class="current">Current Plan</a>
+                <a class="learnmore">Pelajari Lebih Lanjut <i class="fa-solid fa-arrow-right"></i></a>
+             </div>   
+        </div>
+
+        <div class="planpremium" data-aos="fade-up">
+            <h1><i class="fa-solid fa-star"></i>Premium</h1>
+            <p>Profesional</p>
+            <div class="hargapremium">
+                <h2>Rp 8,540,460</h2>
+                <p>Business Class</p>
+            </div>
+                <ul class="listbenefit">
+                    <li><i class="fa-solid fa-check"></i> Bigger and Solo Seat</li>
+                    <li><i class="fa-solid fa-check"></i> More Snacks</li>
+                    <li><i class="fa-solid fa-check"></i> Bathroom + Shower</li>
+                    <li><i class="fa-solid fa-check"></i> VIP Room</li>
+                </ul>
+             <div class="btnlist">
+                <a class="upgradepremium">Upgrade Plan</a>
+                <a class="learnmoreup">Pelajari Lebih Lanjut <i class="fa-solid fa-arrow-right"></i></a>
+             </div>   
+        </div>
+
+        <div class="planstandar" data-aos="fade-up">
+            <h1><i class="fa-solid fa-thumbs-up"></i>Standar</h1>
+            <p>Reguler</p>
+            <div class="hargastandar">
+                <h2>Rp 3,500,900</h2>
+                <p>First Class</p>
+            </div>
+                <ul class="listbenefit">
+                    <li><i class="fa-solid fa-check"></i> Premium seats, More space</li>
+                    <li><i class="fa-solid fa-check"></i> Priority check-in</li>
+                    <li><i class="fa-solid fa-check"></i> Lounge access</li>
+                </ul>
+             <div class="btnlist">
+                <a class="upgradestandar">Upgrade Plan</a>
+                <a class="learnmorestandar">Pelajari Lebih Lanjut <i class="fa-solid fa-arrow-right"></i></a>
+             </div>   
+        </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- --footer-- -->
+<section class="footer" id="k">
+    <div class="isifooter" data-aos="fade-up">
+        <div class="footerlist">
+            <ul>
+                <h1>Beranda</h1>
+                <li>Tentang Kami</li>
+                <li>Destinasi Popular</li>
+                <li>Testimoni</li>
+                <li>Paket Wisata</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+
+        <div class="footercustomer">
+            <ul>
+                <h1>Service</h1>
+                <li><i class="fa-solid fa-phone"></i> 0877-9789-5571</li>
+                <li><i class="fa-solid fa-location-dot"></i> Brooklyn, New York 11211</li>
+                <li><i class="fa-solid fa-envelope"></i> ExproTravel@gmail.com</li>
+            </ul>
+        </div>
+
+        <div class="footersocial">
+        <ul>
+            <h1>Sosial Media Kami</h1>
+            <div class="sosial">
+            <li class="insta"><i class="fa-brands fa-instagram"></i></li>
+            <li class="twitter"><i class="fa-brands fa-x-twitter"></i></li>
+            <li class="youtube"><i class="fa-brands fa-youtube"></i></li>
+        </div>
+    </ul>
+        </div>
+
+        <div class="newsletter">
+            Subscribe newsletter kami!
+            <div class="bagiannewsletter">
+                <input type="text" placeholder="Alamat email"> 
+                <btn>Subscribe</btn>
+            </div>
+        </div>
+
+    </div>
+    <p>
+        Copyright ExproTravel @ 2021 All rights reserved
+    </p>
+</div>
+
+</section>
+
+    <!-- --Bundle-- -->
+
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+
+      
+</body>
+</html>

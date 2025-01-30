@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    top: 0;
+    box-sizing:  border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    font-size: 2.5em;
+    font-weight: 700;
+    color: rgb(35, 35, 85);
+}
+
+h6{
+    font-size: 1.1rem;
+    color: rgb(24, 24, 49);    
+}
+
+span{
+    font-size: .9rem;
+    color: #757373;
+}
+
+/* Navigasi */
+nav{
+    top: 0;
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 8vw;
+}
+
+nav img{
+    width: 150px;
+    cursor: pointer;
+}
+
+#menu-btn{
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+
+#menu-close{
+    display: none;
+}
+
+nav .navigation ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav .navigation ul li{
+    list-style: none;
+    margin-left: 30px ;
+}
+
+nav .navigation ul li a{
+   text-decoration: none;
+   color: rgb(21,22, 100);
+   font-size: 16px;
+   font-weight: 500;
+   transition: 0.3s ease;
+}
+
+nav .navigation ul li a:hover{
+    color: #FDC93B;
+}
+
+/* home */
+#home{
+    background-image: linear-gradient(rgba(9,5,54,0.3),rgba(5,4,46,0.7)),url("images/back2.jpg");
+    width: 100%;
+    height: 100vh;
+ 
+    background-size: cover;
+    background-position: center;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+}
+
+#home h2{
+    color: #fff;
+    font-size:  2.2rem;
+    letter-spacing: 1px;
+}
+
+#home p{
+    width: 50%;
+    color: #fff;
+    font-size: 0.9rem;
+    line-height: 25px;
+}
+
+#home .btn{
+    margin-top: 30px;
+}
+
+#home a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background: #fff;
+    font-weight: 600;
+    border-radius: 5px ;
+}
+
+#home a.blue{
+    color: #fff;
+    background: rgb(21,21, 100);
+    transition: 0.3s ease;
+}
+
+#home a.blue:hover{
+    color: rgb(21,21, 100);
+    background: #fff;
+}
+
+#home a.yellow{
+    color: #fff;
+    background: #FDC93B;
+    transition: 0.3s ease;
+}
+
+#home a.yellow:hover{
+    color:#FDC93B;
+    background:#fff;
+}
+
+/* feature */
+#feature{
+    padding: 5vw 8vw 0 8vw;
+    text-align: center;
+}
+
+#feature .fea-base{
+    display: flex;
+    grid-gap: 1rem;
+    margin-top:50px;
+}
+
+.cost{
+    padding-left: 15px;
+}
+
+#feature .fea-box{
+    background: #F9F9FF;
+    text-align: start;
+}
+
+#feature .fea-box i{
+    font-size: 2.3rem;
+    color: rgb(44,44,80);
+}
+
+#feature .fea-box h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(46,44,59);
+    padding: 13px 0 7px 0;
+}
+
+#feature .fea-box p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(70,70,87);
+}
+
+/* courses */
+#course{
+    padding: 8vw 8vw 0 8vw;
+    text-align: center;
+}
+
+#course .course-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+    margin-top:50px;
+}
+
+#course .courses{
+    text-align: start;
+    background: #F9F9FF;
+    height: 100%;
+}
+
+#course .courses img{
+    width: 100%;
+    height: 60%;
+    background-size: cover;
+    background-position: center;
+}
+
+#course .courses .details{
+    padding: 15px 15px 0 15px;
+}
+
+#course .courses .details i{
+    color: #FDC93B;
+    font-size: .9rem;
+}
+
+@media (max-width:800px){
+    /* nav{
+        padding: 15px 20px;
+    } */
+
+    nav img{
+        width: 130px;
+    }
+
+    #menu-btn{
+        display: initial;
+    }
+    
+    #menu-close{
+        display: initial;
+        font-size: 1.6rem;
+        color: white;
+        padding: 30px 0 20px 20px;
+    }
+
+    nav .navigation ul{
+        position: absolute;
+        top: 0;
+        right: -220px;  /*tadinya 0  */
+        width: 220px;
+        background: rgba(17, 20, 104, 0.45);
+        height: 100vh;
+        backdrop-filter: blur(4.5px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        transition: 0.3s ease;
+    }
+    
+    nav .navigation ul.active{
+        right: 0;
+
+    }
+
+    nav .navigation ul li{
+        padding: 20px 0 20px 40px;
+        margin-left: 0;
+    }
+
+    nav .navigation ul li a{
+        color: white;
+    }
+
+
+}
+
+
+
+
